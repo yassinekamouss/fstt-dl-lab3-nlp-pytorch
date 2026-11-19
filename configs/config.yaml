@@ -10,7 +10,7 @@ scraping:
   topic_ar: "الذكاء الاصطناعي"
   topic_fr: "Intelligence Artificielle"
   base_url: "https://ar.wikipedia.org/wiki/"
-  user_agent: "FSTT-MBD-Lab3-ArabicNLP/1.0 (Academic Research; https://github.com/yassinekamouss/fstt-dl-lab3-nlp-pytorch)"
+  user_agent: "FSTT-LSI-Lab3-ArabicNLP/1.0 (Academic Research; https://github.com/yassinekamouss/fstt-dl-lab3-nlp-pytorch)"
   request_delay: 0.35
   timeout: 15
   max_retries: 3

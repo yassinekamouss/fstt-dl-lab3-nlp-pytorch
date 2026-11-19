@@ -128,7 +128,7 @@ class ArabicWikipediaScraper(BaseScraper):
         self.user_agent: str = str(
             scraping_cfg.get(
                 "user_agent",
-                "FSTT-MBD-Lab3-ArabicNLP/1.0 (Academic Research)",
+                "FSTT-LSI-Lab3-ArabicNLP/1.0 (Academic Research)",
             )
         )
         self.request_delay: float = float(scraping_cfg.get("request_delay", 0.35))

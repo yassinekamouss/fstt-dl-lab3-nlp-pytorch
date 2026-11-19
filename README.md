@@ -1,4 +1,4 @@
-# FST Tanger — Master MBD — Deep Learning : Lab 3 (Arabic NLP en PyTorch & Fine-Tuning AraGPT2)
+# FST Tanger — CI-LSI (Cycle d'Ingénieur) — Deep Learning : Lab 3 (Arabic NLP en PyTorch & Fine-Tuning AraGPT2)
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Sequence%20Models-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/)
@@ -6,7 +6,7 @@
 [![Open Notebook 01](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yassinekamouss/fstt-dl-lab3-nlp-pytorch/blob/main/notebooks/01_scraping_and_dataset.ipynb)
 
 > **Université Abdelmalek Essaadi — Faculté des Sciences et Techniques de Tanger (FSTT)**  
-> **Département Génie Informatique — Master MBD — Deep Learning (Atelier 3 / Lab 3)**  
+> **Département Génie Informatique — Cycle d'Ingénieur (CI-LSI) — Deep Learning (Atelier 3 / Lab 3)**  
 > **Encadrant :** Pr. Elaachak Lotfi  
 > **Dépôt GitHub :** [`yassinekamouss/fstt-dl-lab3-nlp-pytorch`](https://github.com/yassinekamouss/fstt-dl-lab3-nlp-pytorch)
 
