@@ -1,0 +1,225 @@
+project:
+  name: "fstt-dl-lab3-nlp-pytorch"
+  repo_url: "https://github.com/yassinekamouss/fstt-dl-lab3-nlp-pytorch.git"
+  repo_name: "fstt-dl-lab3-nlp-pytorch"
+  branch: "main"
+  drive_project_dir: "/content/drive/MyDrive/fstt-dl-lab3-nlp-pytorch"
+  seed: 42
+
+scraping:
+  topic_ar: "الذكاء الاصطناعي"
+  topic_fr: "Intelligence Artificielle"
+  base_url: "https://ar.wikipedia.org/wiki/"
+  user_agent: "FSTT-MBD-Lab3-ArabicNLP/1.0 (Academic Research; https://github.com/yassinekamouss/fstt-dl-lab3-nlp-pytorch)"
+  request_delay: 0.35
+  timeout: 15
+  max_retries: 3
+  min_words: 25
+  max_words: 300
+  min_arabic_ratio: 0.70
+  max_pages_per_tier: 40
+  max_paragraphs_per_tier: 850
+  enable_link_expansion: true
+  seed_titles:
+    core:
+      - "الذكاء الاصطناعي"
+      - "تعلم الآلة"
+      - "تعلم عميق"
+      - "شبكة عصبية اصطناعية"
+      - "معالجة اللغات الطبيعية"
+      - "رؤية حاسوبية"
+      - "تعلم معزز"
+      - "شبكة عصبية التفافية"
+      - "شبكة عصبية متكررة"
+      - "محول (تعلم الآلة)"
+      - "نموذج لغوي كبير"
+      - "توليد اللغة الطبيعية"
+      - "ذكاء اصطناعي توليدي"
+      - "تعلم خاضع للإشراف"
+      - "تعلم غير خاضع للإشراف"
+      - "خوارزمية الانتشار الخلفي"
+      - "ذاكرة قصيرة وطويلة المدى"
+      - "شجرة قرار"
+      - "آلة المتجهات الداعمة"
+      - "معالجة الصور الرقمية"
+      - "التعرف على الكلام"
+      - "نظام خبير"
+      - "منطق ضبابي"
+      - "خوارزمية جينية"
+      - "تاريخ الذكاء الاصطناعي"
+      - "أخلاقيات الذكاء الاصطناعي"
+    related:
+      - "علم البيانات"
+      - "بيانات ضخمة"
+      - "خوارزمية"
+      - "علم الحاسوب"
+      - "برمجة"
+      - "بايثون"
+      - "روبوتية"
+      - "إحصاء"
+      - "نظرية الاحتمالات"
+      - "جبر خطي"
+      - "حوسبة سحابية"
+      - "أمن الحاسوب"
+      - "قاعدة بيانات"
+      - "تنقيب في البيانات"
+      - "إنترنت الأشياء"
+      - "هندسة البرمجيات"
+      - "نظام تشغيل"
+      - "شبكة حاسوب"
+      - "تشفير"
+      - "حوسبة كمومية"
+    off_topic:
+      - "المغرب"
+      - "تاريخ المغرب"
+      - "طنجة"
+      - "كرة القدم"
+      - "المطبخ المغربي"
+      - "الأدب العربي"
+      - "علم الفلك"
+      - "جغرافيا"
+      - "الموسيقى العربية"
+      - "العمارة الإسلامية"
+      - "التاريخ القديم"
+      - "علم الأحياء"
+      - "الفيزياء"
+      - "الكيمياء"
+      - "الاقتصاد"
+      - "السياحة في المغرب"
+      - "كأس العالم"
+      - "الشعر العربي"
+      - "المحيط الأطلسي"
+      - "جبال الأطلس"
+  domain_lexicon:
+    - "ذكاء"
+    - "اصطناعي"
+    - "تعلم"
+    - "اله"
+    - "عميق"
+    - "شبكه"
+    - "شبكات"
+    - "عصبيه"
+    - "عصبي"
+    - "خوارزميه"
+    - "خوارزميات"
+    - "معالجه"
+    - "لغات"
+    - "طبيعيه"
+    - "رؤيه"
+    - "حاسوبيه"
+    - "نموذج"
+    - "نماذج"
+    - "بيانات"
+    - "تدريب"
+    - "تنبؤ"
+    - "تصنيف"
+    - "توليد"
+    - "محول"
+    - "محولات"
+    - "انتباه"
+    - "طبقات"
+    - "عصبون"
+    - "عصبونات"
+    - "اوزان"
+    - "انحدار"
+    - "معزز"
+    - "اشراف"
+    - "تجمع"
+    - "تجميع"
+    - "تجزئه"
+    - "دلاله"
+    - "استدلال"
+    - "تمثيل"
+    - "معرفه"
+    - "روبوت"
+    - "روبوتات"
+    - "ادراك"
+    - "بصري"
+    - "كلام"
+    - "تحليل"
+    - "تحسين"
+    - "انتشار"
+    - "خلفي"
+    - "دقه"
+    - "انحياز"
+    - "تعميم"
+    - "سمات"
+    - "متجهات"
+    - "حسابي"
+
+preprocessing:
+  representation_for_models: "text_lemmatized"
+  min_tokens_after_clean: 5
+  discretization_bins: [0.0, 4.0, 7.0, 10.01]
+  class_names:
+    - "Faible (0-4)"
+    - "Moyenne (4-7)"
+    - "Élevée (7-10)"
+  split_ratios:
+    train: 0.70
+    val: 0.15
+    test: 0.15
+  vocab_min_freq: 2
+  vocab_max_size: 20000
+  max_seq_len: 160
+
+part1_models:
+  architectures:
+    - "rnn"
+    - "birnn"
+    - "gru"
+    - "lstm"
+  tuning:
+    n_trials_per_arch: 6
+    epochs: 12
+    patience: 4
+    search_space:
+      embedding_dim: [64, 128, 192]
+      hidden_dim: [64, 128, 256]
+      num_layers: [1, 2]
+      dropout: [0.2, 0.5]
+      lr: [0.0005, 0.003]
+      batch_size: [32, 64]
+      pooling: ["last", "mean", "mean_max"]
+  final_training:
+    epochs: 25
+    patience: 6
+    weight_decay: 0.0001
+    grad_clip: 1.0
+  lm_benchmark:
+    epochs: 10
+    embedding_dim: 128
+    hidden_dim: 256
+    num_layers: 2
+    dropout: 0.3
+    lr: 0.002
+    batch_size: 32
+    max_len: 48
+    prefix_len: 6
+    gen_max_tokens: 20
+    mask_prob: 0.15
+
+part2_gpt2:
+  model_name: "aubmindlab/aragpt2-base"
+  block_size: 256
+  epochs: 4
+  batch_size: 8
+  grad_accum_steps: 2
+  lr: 0.00005
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  generation:
+    max_new_tokens: 150
+    min_new_tokens: 60
+    temperature: 0.8
+    top_k: 50
+    top_p: 0.92
+    repetition_penalty: 1.35
+    no_repeat_ngram_size: 3
+    num_beams: 5
+  seed_prompts:
+    - "يُعد الذكاء الاصطناعي من أبرز التقنيات الحديثة التي"
+    - "تعتمد الشبكات العصبية العميقة على طبقات متعددة من"
+    - "تُستخدم معالجة اللغات الطبيعية في فهم وتوليد"
+    - "ساهمت خوارزميات تعلم الآلة في تطوير مجالات طبية وصناعية مثل"
+    - "يمثل نموذج المحولات نقلة نوعية في مجال النماذج اللغوية حيث"
