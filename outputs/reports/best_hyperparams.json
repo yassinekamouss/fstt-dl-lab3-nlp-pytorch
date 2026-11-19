@@ -1,0 +1,38 @@
+{
+  "rnn": {
+    "embedding_dim": 64,
+    "hidden_dim": 256,
+    "num_layers": 2,
+    "dropout": 0.5,
+    "lr": 0.0014595756869825133,
+    "batch_size": 32,
+    "pooling": "mean_max"
+  },
+  "birnn": {
+    "embedding_dim": 192,
+    "hidden_dim": 256,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "lr": 0.0029303352408360985,
+    "batch_size": 32,
+    "pooling": "mean"
+  },
+  "gru": {
+    "embedding_dim": 128,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "dropout": 0.4,
+    "lr": 0.0017781056670396784,
+    "batch_size": 64,
+    "pooling": "last"
+  },
+  "lstm": {
+    "embedding_dim": 128,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "dropout": 0.4,
+    "lr": 0.0017781056670396784,
+    "batch_size": 64,
+    "pooling": "last"
+  }
+}

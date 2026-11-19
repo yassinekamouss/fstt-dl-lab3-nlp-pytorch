@@ -1,0 +1,44 @@
+{
+  "total_rows": 2247,
+  "unique_articles": 49,
+  "splits": {
+    "train": {
+      "rows": 1493,
+      "articles": 41,
+      "class_dist": {
+        "0": 966,
+        "1": 323,
+        "2": 204
+      }
+    },
+    "val": {
+      "rows": 393,
+      "articles": 5,
+      "class_dist": {
+        "0": 254,
+        "1": 70,
+        "2": 69
+      }
+    },
+    "test": {
+      "rows": 361,
+      "articles": 3,
+      "class_dist": {
+        "0": 213,
+        "1": 78,
+        "2": 70
+      }
+    }
+  },
+  "vocab_size": 5112,
+  "preprocessing_stats": {
+    "rows_before_filter": 2247,
+    "rows_after_filter": 2247,
+    "rows_dropped": 0,
+    "vocab_raw": 38645,
+    "vocab_clean": 27013,
+    "vocab_nostop": 26660,
+    "vocab_stemmed": 6448,
+    "vocab_lemmatized": 11366
+  }
+}
